@@ -1,0 +1,902 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+.title h5{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FF5538;
+    margin-bottom: 10px;
+}
+.title h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #29313D;
+    width: 449px;
+    margin-bottom: 60px;
+}
+/* ============================
+Nav start
+=============================== */
+nav {
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+}
+nav .box{
+    display: flex;
+}
+nav .box .logo{
+    width: 20%;
+    margin: auto;
+}
+nav .box .navitem{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .box .navitem ul{
+    display: flex;
+    column-gap: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+nav .box .navitem ul i{
+    margin-left: 8px;
+}
+nav .box .button {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .box .button a{
+    display: inline-block;
+    background: #FF5538;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 18px;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+nav .box .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ============================
+Nav End
+=============================== */
+/* ============================
+banner start
+=============================== */
+
+.banner{
+    background: url(../images/banner.png);
+    padding: 293px 0;
+    
+}
+.banner .round-shape{
+    width: 121px;
+    height: 121px;
+    border: 1px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 780px;
+    animation: rotate 3s infinite linear ;
+}
+@keyframes rotate{
+    from{
+           transform: rotate(0); 
+    }to{
+            transform: rotate(360deg);
+    }
+}
+.banner .round-shape .round-shape2{
+    width: 25px;
+    height: 25px;
+    background: #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.banner .dot {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    right: 600px;
+    animation: updown1 5s infinite linear forwards;
+}
+
+@keyframes updown1{
+    0%{
+        transform: translateY(-100px);
+    }50%{
+        transform: translateY(0);
+    }51%{
+        transform: translateY(0px);
+    }100%{
+        transform: translateY(-100px);
+    }
+}
+
+.banner .dot2 {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    right: 600px;
+    animation: updown2 5s infinite linear forwards;
+}
+
+@keyframes updown2{
+    0%{
+        transform: translateY(0);
+    }50%{
+        transform: translateY(-100px);
+    }51%{
+        transform: translateY(-100px);
+    }100%{
+        transform: translateY(0);
+    }
+}
+
+.banner .dot3 {
+    width: 20px;
+    height: 20px;
+    background: #C087EE;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    right: 600px;
+    animation: updown3 5s infinite linear forwards;
+}
+
+@keyframes updown3{
+    0%{
+        transform: translatex(-100px);
+    }50%{
+        transform: translatex(0);
+    }51%{
+        transform: translatex(0);
+    }100%{
+        transform: translatex(-100px);
+    }
+}
+
+.banner .one {
+    color: #C087EE;
+    position: absolute;
+    right: 533px;
+    top: 330px;
+    font-size: 20px;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    from{
+           transform: rotate(0); 
+    }to{
+            transform: rotate(360deg);
+    }
+}
+.banner .two {
+    color: #C087EE;
+    position: absolute;
+    left: 533px;
+    top: 330px;
+    font-size: 20px;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    from{
+           transform: rotate(0); 
+    }to{
+            transform: rotate(360deg);
+    }
+}
+.banner .three {
+    color: #C087EE;
+    position: absolute;
+    left: 253px;
+    top: 200px;
+    font-size: 20px;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    from{
+           transform: rotate(0); 
+    }to{
+            transform: rotate(360deg);
+    }
+}
+.banner .four {
+    color: #C087EE;
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    font-size: 20px;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    from{
+           transform: rotate(0); 
+    }to{
+            transform: rotate(360deg);
+    }
+}
+
+.banner .box h1{
+    font-family: 'Poppins', sans-serif;
+    width: 771px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    color: #29313D;
+}
+.banner .box p{
+    font-family: 'Nunito', sans-serif;
+    width: 547px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    color: #29313D;
+}
+.banner .box .button{
+    text-align: center;
+}
+.banner .box a{
+    display: inline-block;
+    background: #FF5538;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 18px;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    margin: 0 12px;
+    border: 1px solid transparent;
+    transition: .4s;
+
+}
+.banner .box .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ============================
+banner End
+=============================== */
+/* ============================
+  Service part start
+=============================== */
+
+.service .box{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.service .box .item{
+    width: 32%;
+    background:#fff;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+}
+
+.service .box .item h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 27px;
+    color: #29313D;
+    margin-top: 34px;
+    margin-bottom: 16px; 
+}
+.service .box .item p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    color: #29313D;
+    width: 374px;
+}
+/* ============================
+Service part  End
+=============================== */
+/* ============================
+Digital life start
+=============================== */
+.dglife .container{
+    position: relative;
+}
+.dglife .title i {
+    color: #C087EE;
+    position: absolute;
+    right: 186px;
+    top: 23px;
+    font-size: 20px;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+    from{
+           transform: rotate(0); 
+    }to{
+            transform: rotate(360deg);
+    }
+}
+.dglife .box{
+    display: flex;
+}
+.dglife .box .image{
+    width: 50%;
+}
+.dglife .box .image img {
+    position: relative;
+    top: 65px;
+    right: 0px;
+    width: 115%;
+    z-index: 1;
+}
+.dglife .box .details{
+    width: 50%;
+    background: rgba(251, 243, 240,.8);
+    padding: 100px 185px;
+    position: relative;
+}
+.dglife .box .details img{
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    animation: dgrotate 5s infinite linear;
+}
+@keyframes dgrotate{
+    0%{
+            transform: rotate(0);
+        }
+    100%{
+            transform: rotate(20deg);
+        }
+}
+.dglife .box .details h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    width: 570px;
+    color: #29313D;
+}
+.dglife .box .details p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    width: 501px;
+    color: #29313D;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    }
+
+.dglife .box .details .button a{
+        display: inline-block;
+        background: #FF5538;
+        color: #fff;
+        padding: 14px 28px;
+        border-radius: 18px;
+        margin-left: auto;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        border: 1px solid transparent;
+        transition: .4s;
+    }
+.dglife .box .details .button a:hover{
+        background: transparent;
+        color: #FF5538;
+        border-color: #FF5538;
+    }
+/* ============================
+Digital life End
+=============================== */
+/* ============================
+counting start
+=============================== */
+
+.counting {
+    background: #fff;
+    width: 100%;
+    padding: 120px 0px;
+    position: relative;
+}
+.counting .ani{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.counting .title {
+    display: flex;
+    align-items: center;
+}
+.counting .title .text {
+    width: 50%;
+}
+.counting .title .text h2{
+    width: 693px;
+}
+.counting .title .button {
+    width: 50%;
+    text-align: end;
+}
+.counting .title .button a{
+    display: inline-block;
+    background: #FF5538;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 18px;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.counting .title .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+.counting .box{
+    display: flex;
+    justify-content: space-between;
+}
+.counting .box .image1 {
+    width: 40.5%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.counting .box .image1 .overlay1{
+    width: 100%;
+    height: 127px;
+    background: #fff;
+    position: absolute;
+    bottom: -95px;
+    left: 0;
+    opacity: 0;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    transition: .4s;
+    -webkit-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+}
+.counting .box .image1:hover .overlay1{
+    bottom: 0px;
+    left: 0;
+    opacity: 1;
+}
+.counting .box .image1 .overlay1 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #29313D;
+}
+.counting .box .image1 .overlay1 a{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF5538;
+}
+.counting .box .image2{
+    width: 57.5%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.counting .box .image2 .overlay2{
+    width: 100%;
+    height: 127px;
+    background: #fff;
+    position: absolute;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    bottom: -95px;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+    -webkit-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75);
+}
+.counting .box .image2:hover .overlay2{
+    bottom: 0px;
+    left: 0;
+    opacity: 1;
+}
+.counting .box .image2 .overlay2 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #29313D;
+}
+.counting .box .image2 .overlay2 a{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF5538;
+}
+/* ============================
+counting End
+=============================== */
+/* ============================
+Work start
+=============================== */
+
+.works{
+    width: 100%;
+    background: rgba(251, 243, 240,.8);
+    padding: 120px 0;
+}
+.works .box{
+    display: flex;
+    width: 100%;
+}
+.works .box .left{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-between;
+}
+.works .box .left .item00{
+    width: 48%;
+    background: #fff;
+    text-align: center;
+    padding: 74px 60px;
+    box-sizing: border-box;
+}
+.works .box .left .item00 h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #29313D;
+}
+.works .box .left .item00 p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #29313D;
+}
+.works .box .right{
+    width: 50%;
+    margin-left: 100px;
+}
+.works .box .right h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    color: #29313D;
+    width: 570px;
+    margin-bottom: 20px;
+}
+.works .box .right p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #29313D;
+    width: 530px;
+    margin-bottom: 40px;
+}
+
+.works .box .right .button a{
+    display: inline-block;
+    background: #FF5538;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 18px;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.works .box .right a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+
+/* ============================
+Work End
+=============================== */
+/* ============================
+Trust start
+=============================== */
+.trust{
+    margin: 120px 0px;
+}
+.trust .title h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    width: 849px;
+    color: #29313D;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.trust .box img{
+    margin-right: 20px;
+}
+
+/* ============================
+Trust End
+=============================== */
+/* ============================
+ Customer Start
+=============================== */
+
+.customer{
+    width: 100%;
+    background: rgba(251, 243, 240,.8);
+    padding: 120px 0px;
+}
+.customer .box{
+    display: flex;
+}
+.container .box .say{
+    width: 50%;
+}
+.container .box .say h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: #29313D;
+    margin-bottom: 60px;
+}
+.container .box .say h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+}
+.container .box .say h3 i{
+    margin-left: 24px;
+    padding: 20px 25px;
+    background: #FFABBA;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+.container .box .say h3 i:hover{
+    background: #FF5538;
+}
+.container .box .say img{
+    margin-right: 28px;
+}
+.customer .box .say p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    width: 690px;
+    color: #29313D;
+    margin-top: 60px;
+    margin-bottom: 61px;
+}
+.customer .box .picture{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+/* ============================
+Customer End
+=============================== */
+/* ============================
+Project start
+=============================== */
+
+.project{
+    background: #FFD7C8;
+    width: 100%;
+    padding: 100px 0px;
+}
+.project .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #29313D;
+}
+.project .title .text {
+    width: 50%;
+}
+.project p{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    width: 1279px;
+}
+.project .title .text h2{
+    width: 693px;
+}
+.project .title .button {
+    width: 50%;
+    text-align: end;
+}
+.project .title .button a{
+    display: inline-block;
+    background: #FF5538;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 18px;
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.project .title .button a:hover{
+    background: transparent;
+    color: #FF5538;
+    border-color: #FF5538;
+}
+/* ============================
+project End
+=============================== */
+/* ============================
+contact start
+=============================== */
+
+.contact{
+    padding: 140px 0px;
+}
+.contact .box{
+    display: flex;
+}
+.contact .box .logo{
+    width: 40%;
+    height: 300px;
+}
+.contact .box .logo p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    width: 449px;
+    color: #29313D;
+    margin-top: 44px;
+}
+.contact .box .Features{
+    width: 20%;
+}
+.contact .box .Features h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+.contact .box .Features ul li{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.contact .box .Products{
+    width: 20%;
+}
+.contact .box .Products h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+.contact .box .Products ul li{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.contact .box .Support{
+    width: 20%;
+}
+.contact .box .Support h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+.contact .box .Support ul li{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* ============================
+contact start
+=============================== */
+/* ============================
+Footer start
+=============================== */
+footer{
+    padding-bottom: 57px;
+}
+footer .box{
+    width: 100%;
+    display: flex;
+}
+footer .box .leftpart{
+    width: 80%;
+}
+footer .box .leftpart p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+}
+footer .box .rightpart{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .box .rightpart span{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* ============================
+Footer End
+=============================== */
